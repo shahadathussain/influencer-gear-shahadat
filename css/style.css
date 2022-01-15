@@ -8,9 +8,10 @@
 .container{
     max-width: 1300px;
     margin: auto;
+    background: #fff;
 }
 body{
-    background-color: #f0f0f0;
+    background: #AAAAAA;;
 }
 img{
     width: 100%;
@@ -64,7 +65,7 @@ nav .menu > a:hover{
     justify-content: space-around;
 }
 .home-content .home-title{
-    width: 600px;
+    width: 550px;
 }
 .home-content .home-title h1{
     font-size: 52px;
@@ -94,14 +95,31 @@ nav .menu > a:hover{
     margin-left: 15px;
 }
 /* home section start */
+
+/* populer img section start */
+.collection-titel{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding: 20px 0px;
+}
+.populer-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
 .collection-photo{
     width: 329px;
     height: 476px;
     background-color: gray;
     border-radius: 5px;
+    margin: 15px auto;
 }
 .collection-photo .photo-item{
-    padding: 10px;
+    padding: 20px;
+}
+.img-info{
+    margin-top: 16px;
 }
 .img-info .title h2{
     font-weight: 500;
@@ -122,3 +140,72 @@ nav .menu > a:hover{
     line-height: 20px;
 
 }
+.rating{
+    margin-left: 15px;
+}
+.button{
+    text-align: right;
+    padding: 25px 0px;
+}
+.button a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #E02C6D;
+    margin-right: 60px;
+    border-radius: 41px;
+}
+/* populer-area end */
+/* footer section start */
+.footer>.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5em;
+    height: 300px;
+    width: 100%;
+    background-color: #0A0826;
+}
+.footer .footer-content h2{
+    font-size: 24px;
+    padding: 20px;
+}
+.footer .footer-content > span .fa,
+.footer .footer-content{
+    color: #fff;
+    margin-top: 20px;
+}
+.footer .footer-content > span .fa{
+    margin: 20px 10px;
+    font-size: 22px;
+}
+/* footer section end */
+
+/* media-queri selector */
+@media screen and (max-width: 950px) {
+    .home-content {
+        padding: 0px 80px;
+    }
+    .home-content .home-title{
+        width: 450px;
+    }
+    .home-content .home-title h1 {
+        font-size: 40px;
+    }
+    .home-content .home-title p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 15px 0px 22px 0px;
+        width: 465px;
+    }
+    .home-content .home-title a {
+        padding: 8px 17px;
+        border-radius: 35px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .home-content {
+       display: block;
+    }
+  }
